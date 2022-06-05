@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "demoAgent"   
+    }
     stages {         
         stage('Build') {
             steps {
@@ -19,7 +21,7 @@ pipeline {
     }
     post {
         always {
-            echo 'pipeline job done!!!'
+            echo 'pipeline job done!!!  Hello Hongik'
         }
     }
 }
