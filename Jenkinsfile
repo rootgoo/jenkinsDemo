@@ -3,25 +3,11 @@ pipeline {
         label "demoAgent"   
     }
     stages {         
-        stage('Build') {
+        stage('Time') {
             steps {
-                echo 'Building..'
+                echo '20200607'
             }
         }
-        stage('Test') {
-            steps {
-                build 'SeleniumMaven'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-    post {
-        always {
-            echo 'pipeline job done!!!  Hello Hongik'
-        }
+
     }
 }
