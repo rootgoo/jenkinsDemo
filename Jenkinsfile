@@ -9,4 +9,7 @@ pipeline {
             }
         }
     }
+    post{
+        always '20200606'
+    }
 }
