@@ -1,7 +1,6 @@
 pipeline {
-    agent {
-        label "demoAgent"   
-    }
+    agent any
+    
     stages {         
         stage('Time') {
             steps {
